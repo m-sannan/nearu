@@ -22,6 +22,14 @@ It says whether the other phone's signal is getting stronger or weaker. It does 
 
 Phones already showed this. On a Xiaomi in a quiet room, the friend's packets arrived in bursts, then stopped, while the scan was still running and other Bluetooth kept arriving.
 
+## Install
+
+The test APK is on the site, so a phone can install it without building anything:
+
+https://m-sannan.github.io/nearu/
+
+That file is the 0.2.0 sideload. Diagnostics in the app should say NearU POC 0.2.0. Do not unzip the APK.
+
 ## Build
 
 Needs JDK 17 and Android SDK 35.

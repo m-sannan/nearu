@@ -6,6 +6,7 @@ local.properties
 build/
 captures/
 *.apk
+!docs/NearU-0.2.0.apk
 *.aab
 *.keystore
 *.jks

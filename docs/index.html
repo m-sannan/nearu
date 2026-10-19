@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NearU</title>
+  <style>
+    :root {
+      --paper: #fff8f0;
+      --ink: #1a1a1a;
+      --muted: #5e584f;
+      --line: #e6ddd0;
+      --signal: #9a3412;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 18px/1.5 Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+    }
+    main { max-width: 38rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+    .kicker {
+      margin: 0;
+      color: var(--signal);
+      font: 600 0.8rem/1.2 ui-sans-serif, system-ui, sans-serif;
+      letter-spacing: 0.04em;
+    }
+    h1 { margin: 0.35rem 0 0; font-size: 3.2rem; letter-spacing: -0.03em; line-height: 1; }
+    .lede { margin: 1rem 0 0; font-size: 1.15rem; }
+    a.download {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 3.5rem;
+      margin-top: 1.75rem;
+      border-radius: 1rem;
+      background: var(--ink);
+      color: white;
+      font: 600 1.05rem/1 ui-sans-serif, system-ui, sans-serif;
+      text-decoration: none;
+    }
+    .note { margin: 0.75rem 0 0; color: var(--muted); font-size: 0.95rem; }
+    section {
+      margin-top: 1.75rem;
+      padding: 1.15rem 1.2rem 1.25rem;
+      background: white;
+      border-radius: 1rem;
+    }
+    h2 { margin: 0; font-size: 1.25rem; }
+    ol, ul { margin: 0.8rem 0 0; padding-left: 1.2rem; }
+    li { margin: 0.55rem 0; font-size: 0.98rem; }
+    a { color: var(--signal); }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.9em; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="kicker">Android test build 0.2.0</p>
+    <h1>NearU</h1>
+    <p class="lede">Find a friend with Bluetooth signal strength. Two phones, the same temporary code, both apps in front. This page only hands you the install file.</p>
+    <a class="download" href="NearU-0.2.0.apk" download="NearU-0.2.0.apk">Download NearU</a>
+    <p class="note">The file is <code>NearU-0.2.0.apk</code>, about 9 MB. Install that file. Do not unzip it. If a file manager opens folders named <code>META-INF</code> or <code>classes.dex</code>, that is the wrong move. Delete those and tap the APK. Android 8 or newer. Allow install from the browser if Android asks.</p>
+
+    <section>
+      <h2>On both phones</h2>
+      <ol>
+        <li>Turn Bluetooth on. For the first try, turn Location services on too. The app does not store GPS.</li>
+        <li>Allow Nearby devices. That is Bluetooth permission. Camera is asked only if you scan a QR.</li>
+        <li>Keep NearU in front. Leaving the app stops discovery on purpose.</li>
+        <li>One phone: Find a friend. The other: Join, then scan the QR or type the code.</li>
+        <li>Walk apart, then back. The bar is strength, not a direction. A short silence says Holding last reading. Signal lost takes about 8 seconds.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Not in this build</h2>
+      <ul>
+        <li>No iPhone build.</li>
+        <li>No map, arrow, compass, or route.</li>
+        <li>No use of other people's phones.</li>
+        <li>No background tracking, account, or saved place.</li>
+      </ul>
+      <p class="note">Source and the signal rules are in the <a href="https://github.com/m-sannan/nearu">repository</a>. Diagnostics inside the app should say NearU POC 0.2.0.</p>
+    </section>
+  </main>
+</body>
+</html>
